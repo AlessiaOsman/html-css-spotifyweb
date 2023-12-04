@@ -26,6 +26,18 @@
         justify-content: flex-start;
     }
 
+    .icon-24.profile{
+        height: 24px;
+        background-color: #b3b3b3;
+        border-radius: 50%;
+    }
+
+    hr{
+        display: block;
+        margin-bottom: var(--spacing-m);
+        color: #b3b3b3;
+    }
+
     .content {
         padding: 16px 0 16px 250px;
 }
