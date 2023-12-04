@@ -19,6 +19,7 @@ main{
     overflow: auto;
     background-color: var(--bg-main);
     position: relative;
+    padding-top: 110px;
 }
 
 footer {
@@ -46,6 +47,22 @@ footer {
     left: 0;
     top: 0;
     bottom: 0;
+    z-index: 1;
+}
+
+.content{
+    max-width: calc(100% - 70px);
+    margin: 0 auto;
+    padding: 16px 0 16px 56px;
+}
+
+.header-content{
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 
