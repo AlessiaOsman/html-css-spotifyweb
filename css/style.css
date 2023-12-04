@@ -9,6 +9,7 @@
 :root{
     --bg-footer: #242424;
     --bg-main: darkblue;
+    --bg-sidebar: #000;
 }
 
 /*Generics*/
@@ -17,19 +18,35 @@ main{
     flex-grow: 1;
     overflow: auto;
     background-color: var(--bg-main);
+    position: relative;
 }
 
 footer {
     background-color: var(--bg-footer);
     height: 100px;
     flex-shrink: 0;
+    z-index: 1;
 }
 
 /*Utils*/
 
-.container{
+.container{ 
     display: flex;
     flex-direction: column;
     height: 100vh;
 
 }
+
+/*Sidebar*/
+
+.sidebar{
+    width: 70px;
+    background-color: var(--bg-sidebar);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
