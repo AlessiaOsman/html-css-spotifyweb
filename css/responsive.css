@@ -3,10 +3,30 @@
 @media screen and (min-width: 501px) {
 
     .sidebar{
-        width: 200px;
+        width: 250px;
+    }
+
+    .logo-small{
+        display: none;
+    }
+
+    .logo-big{
+        display: block;
+        width: 70%;
+    }
+
+    .sidebar ul p{
+        display: block;
+        font-weight: bold;
+    }
+
+    .sidebar ul li{
+        align-items: center;
+        gap: 16px;
+        justify-content: flex-start;
     }
 
     .content {
-        padding: 16px 0 16px 200px;
+        padding: 16px 0 16px 250px;
 }
 }

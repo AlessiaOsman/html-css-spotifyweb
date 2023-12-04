@@ -10,9 +10,15 @@
     --bg-footer: #242424;
     --bg-main: darkblue;
     --bg-sidebar: #000;
+
+    --spacing-m: 16px;
+    --spacing-l: 24px;
 }
 
 /*Generics*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 main{
     flex-grow: 1;
@@ -29,6 +35,7 @@ footer {
     z-index: 1;
 }
 
+
 /*Utils*/
 
 .container{ 
@@ -36,6 +43,14 @@ footer {
     flex-direction: column;
     height: 100vh;
 
+}
+
+.icon-24{
+    width: 24px;
+}
+
+.icon-38{
+    width: 38px;
 }
 
 /*Sidebar*/
@@ -48,7 +63,32 @@ footer {
     top: 0;
     bottom: 100px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.logo-big{
+    display: none;
+}
+
+.sidebar ul{
+    padding: var(--spacing-m);
+    color: white;
+    list-style-type: none;
+}
+
+.sidebar ul li{
+    margin-bottom: var(--spacing-m);
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar ul p{
+    display: none;
+}
+
+
 
 .content{
     max-width: calc(100% - 70px);
