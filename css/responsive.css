@@ -3,7 +3,7 @@
 @media screen and (min-width: 501px) {
 
     .sidebar{
-        width: 250px;
+        flex-basis: 250px;
     }
 
     .logo-small{
@@ -38,7 +38,4 @@
         color: #b3b3b3;
     }
 
-    .content {
-        padding: 16px 0 16px 250px;
-}
 }
