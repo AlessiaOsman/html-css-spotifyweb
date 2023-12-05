@@ -36,6 +36,10 @@ hr{
     display: none;
 }
 
+ul{
+    list-style-type: none;
+}
+
 footer {
     background-color: var(--bg-footer);
     flex-basis: 100px;
@@ -47,6 +51,11 @@ footer {
     align-items: center;
     gap: var(--spacing-m);
 
+}
+
+h4{
+    color: var(--text-color-primary);
+    margin: var(--spacing-m) 0;
 }
 
 
@@ -76,6 +85,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: var(--spacing-m);
 }
 
 .logo-big{
@@ -83,7 +93,7 @@ footer {
 }
 
 .sidebar ul{
-    padding: var(--spacing-m);
+    
     color: white;
     list-style-type: none;
 }
@@ -98,12 +108,44 @@ footer {
     display: none;
 }
 
+.playlist{
+    margin-bottom: var(--spacing-m);
+    display: none;
+}
+
+.add-playlist{
+    color: var(--text-color-secondary);
+    display: flex;
+    gap: var(--spacing-s);
+    align-items: center;
+}
+
+.add-playlist i{
+    font-size: 32px;
+}
+
 /*main content*/
 
 
 .content{
     flex-grow: 1;
     overflow: auto;
+}
+
+.content-page{
+    padding: var(--spacing-s);
+}
+
+.content-page a{
+    color: var(--text-color-secondary);
+    text-decoration: none;
+}
+
+.content-page ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-s);
 }
 
 /*header Content*/
