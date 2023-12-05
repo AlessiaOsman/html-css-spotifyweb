@@ -8,9 +8,13 @@
 
 :root{
     --bg-footer: #242424;
-    --bg-main: darkblue;
+    --bg-main: #1b1b34;
     --bg-sidebar: #000;
+    --text-color-primary: #fff;
+    --text-color-secondary: #b3b3b3;
 
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
 }
@@ -37,6 +41,12 @@ footer {
     flex-basis: 100px;
     flex-shrink: 0;
     z-index: 1;
+    padding: var(--spacing-m);
+    color: var(--text-color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-m);
+
 }
 
 
@@ -88,6 +98,7 @@ footer {
     display: none;
 }
 
+/*main content*/
 
 
 .content{
@@ -95,15 +106,125 @@ footer {
     overflow: auto;
 }
 
+/*header Content*/
+
 .header-content{
     height: 100px;
-    background-color: red;
+    background: #000000;
+    opacity: 0.7;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     margin-bottom: var(--spacing-m);
+    text-align: right;
 }
+
+.header-content a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: var(--spacing-m) var(--spacing-l);
+    border: 2px solid #fff;
+    line-height: 100px;
+    margin-right: var(--spacing-m);
+    border-radius: 50px;
+}
+
+/*footer*/
+
+.footer-track-cover{
+    height: 40px;
+    width: 40px;
+}
+
+.footer-track{
+    gap: var(--spacing-s);
+    display: flex;
+    align-items: center;
+}
+
+.album-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.album-soundtrack-album{
+    font-size: 12px;
+    color: var(--text-color-secondary);
+}
+
+.footer-icons{
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.footer-section{
+    flex-basis: calc(100% / 3);
+}
+
+.progress-bar{
+    height: 5px;
+    background-color: var(--text-color-secondary);
+    border-radius: 3px;
+    position: relative;
+    flex-basis: 80%;
+
+}
+
+.footer-player-controller{
+    margin-bottom: var(--spacing-m);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center
+}
+
+.footer-player-controller .play{
+    font-size: 24px;
+}
+
+.current-progress{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 30%;
+    background-color: grey;
+    border-radius: 3px;
+}
+
+.footer-player-progress-bar{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-m)
+}
+
+.footer-player-progress-bar::before{
+    content: '0:25';
+}
+
+.footer-player-progress-bar::after{
+    content: '4:35';
+}
+
+.footer-settings{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.footer-volume-progress-bar{
+    flex-basis: 40%;
+}
+
+
 
 
 
