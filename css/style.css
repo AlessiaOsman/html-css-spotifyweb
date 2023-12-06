@@ -278,6 +278,10 @@ figure:hover .player{
     border-radius: 50px;
 }
 
+.header-content a:hover{
+    padding: 18px 26px;
+}
+
 /*footer*/
 
 .footer-track-cover{
