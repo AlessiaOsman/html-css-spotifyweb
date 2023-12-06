@@ -240,6 +240,7 @@ figure .player{
     color: #fff;
     align-items: center;
     justify-content: center;
+    font-size: 48px
 }
 
 figure:hover .player{
