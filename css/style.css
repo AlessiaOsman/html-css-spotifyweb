@@ -101,6 +101,18 @@ figure{
     width: 38px;
 }
 
+.fa-icon-16{
+    font-size: 16px;
+}
+
+.fa-icon-24{
+    font-size: 24px;
+}
+
+.fa-icon-32{
+    font-size: 32px;
+}
+
 .row{
     display: flex;
     margin: -16px;
@@ -125,6 +137,9 @@ figure{
     background-color: var(--color-green);
 }
 
+.hover:hover{
+    color: var(--text-color-primary);
+}
 
 /*Sidebar*/
 
@@ -211,7 +226,7 @@ figure{
 }
 
 .content-page nav{
-    margin: 30px 0;
+    margin-bottom: var(--spacing-xl);
     font-size: 14px;
 }
 
@@ -305,6 +320,10 @@ figure:hover .player{
     color: var(--text-color-secondary);
 }
 
+.album-soundtrack-album p:hover{
+    text-decoration: underline;
+}
+
 .footer-icons{
     color: var(--text-color-secondary);
     display: flex;
@@ -337,9 +356,6 @@ figure:hover .player{
     align-items: center
 }
 
-.footer-player-controller .play{
-    font-size: 24px;
-}
 
 .current-progress{
     position: absolute;
@@ -377,6 +393,10 @@ figure:hover .player{
 
 .footer-volume-progress-bar{
     flex-basis: 40%;
+}
+
+.play:hover{
+    font-size: 34px;
 }
 
 
