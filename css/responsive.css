@@ -54,7 +54,10 @@
     .album-soundtrack-album{
         display: flex;
         gap: var(--spacing-s);
+    }
 
+    .playlist{
+        display: block;
     }
 
 

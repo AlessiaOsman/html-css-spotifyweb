@@ -158,6 +158,10 @@ figure{
     flex-direction: column;
 }
 
+.sidebar ul:first-child{
+    margin-bottom: var(--spacing-xl);
+}
+
 .sidebar ul li{
     margin-bottom: var(--spacing-m);
     display: flex;
@@ -178,6 +182,11 @@ figure{
     display: flex;
     gap: var(--spacing-s);
     align-items: center;
+    margin: var(--spacing-m) 0;
+}
+
+.add-playlist:hover{
+    color: var(--text-color-primary);
 }
 
 .add-playlist i{
@@ -255,6 +264,7 @@ figure:hover .player{
     right: 0;
     margin-bottom: var(--spacing-m);
     text-align: right;
+    z-index: 1;
 }
 
 .header-content a{
