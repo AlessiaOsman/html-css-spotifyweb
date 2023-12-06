@@ -12,6 +12,7 @@
     --bg-sidebar: #000;
     --text-color-primary: #fff;
     --text-color-secondary: #b3b3b3;
+    --color-green: #0edd0e;
 
     --spacing-xs: 4px;
     --spacing-s: 8px;
@@ -110,6 +111,15 @@ section h6{
 
 .fb-2{
     flex-basis: calc(100% / 2);
+}
+
+.active::after{
+    display: block;
+    width: 30%;
+    height: 2px;
+    margin: 3px auto;
+    content: '';
+    background-color: var(--color-green);
 }
 
 
