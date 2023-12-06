@@ -2,21 +2,28 @@
 
 @media screen and (min-width: 530px) {
 
+    .flex-m{
+        display: flex;
+    }
+
+    .d-none-m{
+        display: none;
+    }
+
+    .d-block-m{
+        display: block;
+    }
+
     .sidebar{
         flex-basis: 200px;
     }
 
-    .logo-small{
-        display: none;
-    }
 
     .logo-big{
-        display: block;
         width: 70%;
     }
 
     .sidebar ul p{
-        display: block;
         font-weight: bold;
     }
 
@@ -46,19 +53,14 @@
     }
 
     hr{
-        display: block;
         margin-bottom: var(--spacing-m);
         color: #b3b3b3;
     }
 
     .album-soundtrack-album{
-        display: flex;
         gap: var(--spacing-s);
     }
 
-    .playlist{
-        display: block;
-    }
 
 
 }

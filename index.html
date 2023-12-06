@@ -31,44 +31,43 @@
 
         <main>
             <!--Sidebar-->
-            <div class="sidebar">
+            <div class="sidebar flex-s">
                 <div>
                     <ul>
-                        <li>
-                            <img class="logo-small" src="img/logo-small.svg" alt="logo small">
-                            <img class="logo-big" src="img/logo.svg" alt="logo big">
+                        <li class="hover flex-s">
+                            <img class="logo-small d-none-m" src="img/logo-small.svg" alt="logo small">
+                            <img class="logo-big d-none-s d-block-m" src="img/logo.svg" alt="logo big">
 
                         </li>
-                        <li class="active">
+                        <li class="active hover flex-s">
                             <img class="icon-38" src="img/home.svg" alt="home">
-                            <p>Home</p>
+                            <p class="d-none-s d-block-m">Home</p>
                         </li>
-                        <li>
+                        <li class="hover flex-s">
                             <img class="icon-38" src="img/search.svg" alt="cerca">
-                            <p>Cerca</p>
+                            <p class="d-none-s d-block-m">Cerca</p>
                         </li>
-                        <li>
+                        <li class="hover flex-s">
                             <img class="icon-38" src="img/libreria.svg" alt="libreria">
-                            <p>La tua libreria</p>
+                            <p class="d-none-s d-block-m">La tua libreria</p>
                         </li>
                     </ul>
-                    <div class="playlist">
+                    <div class="playlist flex-m d-none-s d-block-m">
                         <div class="playlist-header">
                             <h4>PLAYLIST</h4>
-                            <div class="add-playlist">
+                            <div class="add-playlist hover flex-m">
                                 <i class="fa-solid fa-square-plus"></i>
                                 <p>Crea Playlist</p>
                             </div>
                         </div>
                         <ul class="list">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
+                            <li class="hover">Nome Playlist</li>
                         </ul>
 
                     </div>
@@ -76,15 +75,15 @@
 
                 <div class="footer-sidebar">
                     <ul>
-                        <li>
+                        <li class="hover flex-s">
                             <img class="icon-24" src="img/download.svg" alt="download">
-                            <p>Installa app</p>
+                            <p class="d-none-s d-block-m">Installa app</p>
 
                         </li>
-                        <hr>
-                        <li>
+                        <hr class="d-block-m">
+                        <li class="hover flex-s">
                             <img class="icon-24 profile" src="img/profile.svg" alt="profilo">
-                            <p>John Doe</p>
+                            <p class="d-none-s d-block-m">John Doe</p>
                         </li>
                     </ul>
                 </div>
@@ -106,12 +105,12 @@
 
                     <nav>
                         <ul>
-                            <li class="active"><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
+                            <li class="active"><a class="hover" href="#">IN EVIDENZA</a></li>
+                            <li><a class="hover" href="#">PODCAST</a></li>
+                            <li><a class="hover" href="#">CLASSIFICHE</a></li>
+                            <li><a class="hover" href="#">GENERI E MOOD</a></li>
+                            <li><a class="hover" href="#">NUOVE USCITE</a></li>
+                            <li><a class="hover" href="#">SCOPRI</a></li>
                         </ul>
                     </nav>
 
@@ -261,35 +260,35 @@
         <!--footer-->
 
         <footer>
-            <div class="footer-section footer-track">
+            <div class="footer-section footer-track flex-s">
                 <img class="footer-track-cover" src="img/sinister.jpeg" alt="Sinister">
                 <div class="footer-track-info">
                     <p class="album-title">Sinister</p>
-                    <div class="album-soundtrack-album">
+                    <div class="album-soundtrack-album flex-m">
                         <p class="soundtrack hover">brano</p>
                         <p class="artist hover">nome</p>
                     </div>
                 </div>
-                <div class="footer-section footer-icons">
+                <div class="footer-section footer-icons flex-s">
                     <i class="fa-regular fa-heart hover"></i>
                     <i class="fa-regular fa-folder hover"></i>
                 </div>
             </div>
             <div class="footer-player footer-section">
-                <div class="footer-player-controller">
+                <div class="footer-player-controller flex-s">
                     <i class="fa-solid fa-shuffle fa-icon-16"></i>
                     <i class="fa-solid fa-backward-step fa-icon-16"></i>
                     <i class="fa-regular fa-circle-play play fa-icon-32"></i>
                     <i class="fa-solid fa-forward-step fa-icon-16"></i>
                     <i class="fa-solid fa-rotate-right fa-icon-16"></i>
                 </div>
-                <div class="footer-player-progress-bar">
+                <div class="footer-player-progress-bar flex-s">
                     <div class="progress-bar">
                         <div class="current-progress"></div>
                     </div>
                 </div>
             </div>
-            <div class="footer-section footer-settings">
+            <div class="footer-section footer-settings flex-s">
                 <i class="fa-solid fa-list-ul"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>

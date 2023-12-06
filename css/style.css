@@ -124,6 +124,14 @@ figure{
     text-align: center;
 }
 
+.flex-s{
+    display: flex;
+}
+
+.d-none-s{
+    display: none;
+}
+
 .fb-2{
     flex-basis: calc(100% / 2);
 }
@@ -147,18 +155,8 @@ figure{
     flex-basis: 70px;
     background-color: var(--bg-sidebar);
     flex-shrink: 0;
-    display: flex;
     flex-direction: column;
     padding: var(--spacing-m);
-}
-
-
-.sidebar li:hover {
-    color: var(--text-color-primary);
-}
-
-.logo-big{
-    display: none;
 }
 
 .sidebar ul{
@@ -179,29 +177,18 @@ figure{
 
 .sidebar ul li{
     margin-bottom: var(--spacing-m);
-    display: flex;
     justify-content: center;
-}
-
-.sidebar ul p{
-    display: none;
 }
 
 .playlist{
     margin-bottom: var(--spacing-m);
-    display: none;
 }
 
 .add-playlist{
     color: var(--text-color-secondary);
-    display: flex;
     gap: var(--spacing-s);
     align-items: center;
     margin: var(--spacing-m) 0;
-}
-
-.add-playlist:hover{
-    color: var(--text-color-primary);
 }
 
 .add-playlist i{
@@ -230,9 +217,6 @@ figure{
     font-size: 14px;
 }
 
-.content-page li:hover a{
-    color: var(--text-color-primary);
-}
 
 .content-page nav ul{
     justify-content: center;
@@ -306,7 +290,6 @@ figure:hover .player{
 
 .footer-track{
     gap: var(--spacing-s);
-    display: flex;
     align-items: center;
 }
 
@@ -326,7 +309,6 @@ figure:hover .player{
 
 .footer-icons{
     color: var(--text-color-secondary);
-    display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
 }
@@ -350,7 +332,6 @@ figure:hover .player{
 
 .footer-player-controller{
     margin-bottom: var(--spacing-m);
-    display: flex;
     justify-content: center;
     gap: 16px;
     align-items: center
@@ -368,7 +349,6 @@ figure:hover .player{
 }
 
 .footer-player-progress-bar{
-    display: flex;
     flex-direction: row;
     font-size: 10px;
     justify-content: center;
@@ -385,7 +365,6 @@ figure:hover .player{
 }
 
 .footer-settings{
-    display: flex;
     align-items: center;
     gap: 8px;
     justify-content: flex-end;
