@@ -80,6 +80,9 @@ section h6{
     margin-bottom: var(--spacing-m);
 }
 
+figure{
+    position: relative;
+}
 
 /*Utils*/
 
@@ -217,6 +220,29 @@ section h6{
     border-radius: 50%;
 }
 
+figure .player{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: #000000;
+    opacity: 0.5;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+figure:hover .player{
+    display: flex;
+    
+}
+
+.popular-artists figure .player{
+    border-radius: 50%;
+}
+
 /*header Content*/
 
 .header-content{
@@ -283,6 +309,10 @@ section h6{
     position: relative;
     flex-basis: 80%;
 
+}
+
+.progress-bar:hover .current-progress{
+    background-color: var(--color-green);
 }
 
 .footer-player-controller{
