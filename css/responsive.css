@@ -3,7 +3,7 @@
 @media screen and (min-width: 530px) {
 
     .sidebar{
-        flex-basis: 250px;
+        flex-basis: 200px;
     }
 
     .logo-small{
@@ -52,5 +52,19 @@
 @media screen and (min-width: 768px) {
     .footer-icons{
         flex-direction: row;
+    }
+
+    .fb-4{
+        flex-basis: calc(100% / 4);
+    }
+}
+
+
+/* Sopra 990px */
+
+@media screen and (min-width: 991px) {
+    
+    .fb-6{
+        flex-basis: calc(100% / 6);
     }
 }

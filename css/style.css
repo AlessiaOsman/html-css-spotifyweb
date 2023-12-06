@@ -17,6 +17,7 @@
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
+    --spacing-xl: 32px;
 }
 
 /*Generics*/
@@ -38,6 +39,9 @@ hr{
 
 ul{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
 }
 
 footer {
@@ -53,9 +57,26 @@ footer {
 
 }
 
-h4{
+h4,
+h3{
     color: var(--text-color-primary);
     margin: var(--spacing-m) 0;
+}
+
+h6{
+    color: var(--text-color-secondary);
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    margin-bottom: var(--spacing-xl);
+}
+
+section h6{
+    margin-bottom: var(--spacing-m);
 }
 
 
@@ -76,6 +97,26 @@ h4{
     width: 38px;
 }
 
+.row{
+    display: flex;
+    margin: -16px;
+    flex-wrap: wrap;
+}
+
+.col{
+    padding: 16px;
+    text-align: center;
+}
+
+.fb-2{
+    flex-basis: calc(100% / 2);
+}
+
+
+
+
+
+
 /*Sidebar*/
 
 .sidebar{
@@ -88,14 +129,20 @@ h4{
     padding: var(--spacing-m);
 }
 
+
+.sidebar li:hover {
+    color: var(--text-color-primary);
+}
+
 .logo-big{
     display: none;
 }
 
 .sidebar ul{
     
-    color: white;
+    color: var(--text-color-secondary);
     list-style-type: none;
+    flex-direction: column;
 }
 
 .sidebar ul li{
@@ -133,7 +180,7 @@ h4{
 }
 
 .content-page{
-    padding: var(--spacing-s);
+    padding: var(--spacing-m);
 }
 
 .content-page a{
@@ -141,11 +188,23 @@ h4{
     text-decoration: none;
 }
 
-.content-page ul{
-    display: flex;
-    flex-wrap: wrap;
+.content-page nav{
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.content-page li:hover a{
+    color: var(--text-color-primary);
+}
+
+.content-page nav ul{
     justify-content: center;
-    gap: var(--spacing-s);
+    gap: var(--spacing-xl);
+    font-weight: bold;
+}
+
+.popular-artists img{
+    border-radius: 50%;
 }
 
 /*header Content*/
